@@ -1,0 +1,65 @@
+.body{
+
+    background-image: url(/Images/Background.jpeg);
+}
+
+.allitems{
+    text-align: center;
+    background-color: white;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 200px;
+    height: 650px;
+    
+    
+}
+.login{
+    color:black;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.email{
+    
+    width: 240px;
+    height: 45px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color:silver ;
+    border: none;
+
+}
+.password{
+   width: 240px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: silver;
+    border: none;
+
+}
+
+.checkbox{
+    margin-top: 20px;
+    margin-right: 140px;
+    color: gray;
+}
+.log{
+width: 240px;
+    height: 45px;
+    background-color:steelblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.or{
+    margin-top: 40px;
+    color: rgb(209, 208, 208);
+}
+
+  
+
+.signup{
+    margin-top: 170px;
+}
