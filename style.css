@@ -23,5 +23,63 @@ body{
     height: 450px;
     border-radius: 30px;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
+    
 }
 
+.container h1{
+    font-size: 36px;
+}
+
+
+.log-in-form{
+    align-items: center;
+    color: #333;
+    text-align: center;
+
+}
+
+
+.input{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input input{
+    width: 70%;
+    padding: 13px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+}
+.input input::placeholder{
+    color: #888;
+    font-weight: 400;
+}
+
+
+.forgot{
+    margin: -15px 0 15px;
+}
+
+.forgot a{
+    font-size: 14.5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn{
+    width: 70%;
+    padding: 13px;
+    background:seagreen;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+
+}
