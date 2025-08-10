@@ -1,65 +1,27 @@
-.body{
-
-    background-image: url(/Images/Background.jpeg);
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
 
-.allitems{
-    text-align: center;
-    background-color: white;
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-top: 200px;
-    height: 650px;
-    
-    
-}
-.login{
-    color:black;
-    text-align: center;
-    padding-top: 50px;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: steelblue;
 
-}
-.email{
-    
-    width: 240px;
-    height: 45px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    background-color:silver ;
-    border: none;
-
-}
-.password{
-   width: 240px;
-    height: 45px;
-    margin-bottom: 10px;
-    background-color: silver;
-    border: none;
 
 }
 
-.checkbox{
-    margin-top: 20px;
-    margin-right: 140px;
-    color: gray;
-}
-.log{
-width: 240px;
-    height: 45px;
-    background-color:steelblue;
-    border: none;
-    color: white;
-    font-weight: bold;
-    margin-top: 30px;
+
+.container{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
 }
 
-.or{
-    margin-top: 40px;
-    color: rgb(209, 208, 208);
-}
-
-  
-
-.signup{
-    margin-top: 170px;
-}
