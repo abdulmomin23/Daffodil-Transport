@@ -1,5 +1,5 @@
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
@@ -20,9 +20,10 @@ body{
     position:relative;
     background: #fff;
     width: 350px;
-    height: 550px;
+    height: 650px;
     border-radius: 30px;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
+    overflow: hidden;
     
 }
 
@@ -39,6 +40,7 @@ form{
 
 
 .log-in-form{
+    margin: 20px;
     align-items: center;
     color: #333;
     text-align: center;
@@ -48,7 +50,7 @@ form{
 
 .input{
     position: relative;
-    margin: 30px 0;
+    margin: 30px 0 ;
 }
 
 .input input{
@@ -115,7 +117,7 @@ form{
 
 
 .Registration-form{
-    visibility: idden;
+    visibility:hidden;
 }
 
 
@@ -125,15 +127,53 @@ form{
     height: 100%;
 }
 
+.toggle-box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    bottom: -200%;
+    background: seagreen;
+    z-index: 2;
+    border-radius: 100px;
+    
+
+
+}
+
 .toggle-panel{
     position: absolute;
-    width: 50%;
-    height: 100%;
-    background: seagreen;
+    width: 100%;
+    height: 40%;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 
 }
+
+
+.Login-form, .Registration-form {
+    display: none;
+}
+
+.Login-form.active, .Registration-form.active {
+    display: block;
+}
+
+
+
+.toggle-panel p{
+    margin-bottom: 20px;
+}
+
+.toggle-panel .btn{
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+
