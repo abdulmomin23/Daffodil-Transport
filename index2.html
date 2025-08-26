@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Dashboard</title>
+    <link rel="stylesheet" href="/style 2.css">
+</head>
+<body>
+
+<header>🚍 Bus Booking Dashboard</header>
+
+
+<div class="container">
+    <nav>
+        <ul>
+            <li onclick="showSection('profile')">Profile</lionclick></li>
+            <li onclick="showSection('book')">Available Cars / Book Seat</li>
+            <li onclick="showSection('prebook')">Pre-book / Cancel Seat</li>
+            <li onclick="showSection('notifications')">Notifications</li>
+            <li onclick="showSection('tracking')">Bus Tracking</li>
+            <li onclick="showSection('search')">Search Bus</li>
+            <li onclick="showSection('payment')">Payment</li>
+            <li onclick="logout()">Log Out</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="book" class="card">
+            <h2>Book a Seat</h2>
+            <label>Select Area: </label>
+            <input type="text" placeholder="Enter area"><br><br>
+            <label>Select Time: </label>
+            <input type="time"><br><br>
+            <label>Select Bus: </label>
+            <select>
+                <option>Bus 1</option>
+                <option>Bus 2</option>
+            </select><br><br>
+            <button onclick="bookSeat()">Book Seat</button>
+        </section>
+
+        <section id="prebook" class="card">
+            <h2>Pre-book / Cancel Seat</h2>
+            <button onclick="preBook()">Pre-book Seat</button>
+            <button onclick="cancelSeat()">Cancel Seat</button>
+        </section>
+
+        <section id="notifications" class="card">
+            <h2>Notifications</h2>
+            <p>Before 10 minutes of starting car/bus — you will get an alarm.</p>
+            <p>If not confirmed in 1–2 minutes after start, seat will auto-cancel.</p>
+        </section>
+
+        <section id="tracking" class="card">
+            <h2>Bus Movement Location</h2>
+            <p>Location updates appear here...</p>
+            <button onclick="knockBus()">Knock Bus (0.5 KM range)</button>
+        </section>
+
+        <section id="search" class="card">
+            <h2>Search Bus</h2>
+            <input type="text" placeholder="Enter bus name or route">
+            <button>Search</button>
+        </section>
+
+        <section id="payment" class="card">
+            <h2>Payment</h2>
+            <p>Pay for your seat using any online payment method.</p>
+            <button>Pay Now</button>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
